@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { ENV } from "./config/env.js";
 import { db } from "./config/db.js";
-import { favoritesTable, userTable, progressTable } from "./db/schema.js";
+import { favoritesTable, userTable} from "./db/schema.js";
 import { eq } from "drizzle-orm";
 
 const app = express();
