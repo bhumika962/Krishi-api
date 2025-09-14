@@ -4,6 +4,7 @@ import { ENV } from "./config/env.js";
 import { db } from "./config/db.js";
 import { favoritesTable, userTable} from "./db/schema.js";
 import { eq } from "drizzle-orm";
+import job from "./config/cron.js";
 
 const app = express();
 const PORT = ENV.PORT || 5001;
